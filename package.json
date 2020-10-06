@@ -1,0 +1,30 @@
+{
+  "name": "hexo-tag-common",
+  "version": "0.0.1",
+  "description": "Common tags for hexo.",
+  "main": "index.js",
+  "scripts": {
+    "dev": "sass --watch scss/index.scss css/index.css --no-source-map",
+    "lint": "eslint ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/YunYouJun/hexo-tag-common.git"
+  },
+  "author": {
+    "name": "YunYouJun",
+    "email": "me@yunyoujun.cn",
+    "url": "https://www.yunyoujun.cn"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/YunYouJun/hexo-tag-common/issues"
+  },
+  "homepage": "https://github.com/YunYouJun/hexo-tag-common#readme",
+  "devDependencies": {
+    "eslint": "^7.10.0",
+    "eslint-config-prettier": "^6.12.0",
+    "hexo": "^5.2.0",
+    "sass": "^1.26.12"
+  }
+}
