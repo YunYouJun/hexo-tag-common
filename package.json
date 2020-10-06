@@ -1,11 +1,12 @@
 {
   "name": "hexo-tag-common",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Common tags for hexo.",
   "main": "index.js",
   "scripts": {
     "dev": "sass --watch scss/index.scss css/index.css --no-source-map",
-    "lint": "eslint ."
+    "lint": "eslint .",
+    "prepublishOnly": "sass scss/index.scss css/index.css"
   },
   "repository": {
     "type": "git",

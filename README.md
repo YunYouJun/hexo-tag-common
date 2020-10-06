@@ -7,7 +7,7 @@ Common tags for hexo.
 Set it in hexo `_config.yml`.
 
 ```yaml
-common_tag:
+tag_common:
   cdn: true
 ```
 

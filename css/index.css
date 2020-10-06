@@ -1,20 +1,25 @@
-.post-body .tabs {
+.tag-common {
+  --tab-border-top-color: #0078e7;
+}
+
+.tag-common.tabs {
   margin-bottom: 20px;
 }
 
-.post-body .tabs,
+.tag-common.tabs,
 .tabs-comment {
   padding-top: 10px;
 }
-.post-body .tabs ul.nav-tabs,
+.tag-common.tabs ul.nav-tabs,
 .tabs-comment ul.nav-tabs {
   display: flex;
   flex-wrap: wrap;
   margin: 0;
   padding: 0;
 }
-.post-body .tabs ul.nav-tabs li.tab,
+.tag-common.tabs ul.nav-tabs li.tab,
 .tabs-comment ul.nav-tabs li.tab {
+  margin-top: 0;
   border-bottom: 1px solid lightgray;
   border-left: 1px solid transparent;
   border-right: 1px solid transparent;
@@ -24,41 +29,48 @@
   border-radius: 2px 2px 0 0;
   transition: all 0.2s ease-out;
 }
-.post-body .tabs ul.nav-tabs li.tab a,
+.tag-common.tabs ul.nav-tabs li.tab a,
 .tabs-comment ul.nav-tabs li.tab a {
-  border-bottom: initial;
   display: block;
+  color: #666;
+  border-bottom: initial;
   line-height: 1.8;
   padding: 0.25em 0.75em;
   text-align: center;
+  text-decoration: none;
   transition: all 0.2s ease-out;
 }
-.post-body .tabs ul.nav-tabs li.tab a i,
+.tag-common.tabs ul.nav-tabs li.tab a::before,
+.tabs-comment ul.nav-tabs li.tab a::before {
+  display: none;
+}
+.tag-common.tabs ul.nav-tabs li.tab a i,
 .tabs-comment ul.nav-tabs li.tab a i {
   width: 1.2857142857em;
 }
-.post-body .tabs ul.nav-tabs li.tab.active,
+.tag-common.tabs ul.nav-tabs li.tab.active,
 .tabs-comment ul.nav-tabs li.tab.active {
   border-bottom-color: transparent;
   border-left-color: lightgray;
   border-right-color: lightgray;
-  border-top-color: orange;
+  border-top-color: var(--tab-border-top-color);
 }
-.post-body .tabs ul.nav-tabs li.tab.active a,
+.tag-common.tabs ul.nav-tabs li.tab.active a,
 .tabs-comment ul.nav-tabs li.tab.active a {
+  color: var(--tab-border-top-color);
   cursor: default;
 }
-.post-body .tabs .tab-content,
+.tag-common.tabs .tab-content,
 .tabs-comment .tab-content {
   border: 1px solid lightgray;
   border-top-color: transparent;
   border-radius: 0 0 2px 2px;
 }
-.post-body .tabs .tab-content .tab-pane,
+.tag-common.tabs .tab-content .tab-pane,
 .tabs-comment .tab-content .tab-pane {
-  padding: 20px 20px 0 20px;
+  padding: 0.5rem 1rem;
 }
-.post-body .tabs .tab-content .tab-pane:not(.active),
+.tag-common.tabs .tab-content .tab-pane:not(.active),
 .tabs-comment .tab-content .tab-pane:not(.active) {
   display: none;
 }
