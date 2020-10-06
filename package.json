@@ -1,6 +1,6 @@
 {
   "name": "hexo-tag-common",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Common tags for hexo.",
   "main": "index.js",
   "scripts": {

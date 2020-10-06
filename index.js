@@ -44,8 +44,8 @@ if (defaultConfig.cdn) {
   });
 }
 
-const linkTag = `<link href="${cssHref}" rel="stylesheet">`;
-const scriptTag = `<script src="${jsSrc}">`;
+const linkTag = `<link href="${cssHref}" rel="stylesheet"/>`;
+const scriptTag = `<script src="${jsSrc}"></script>`;
 hexo.extend.injector.register("head_begin", linkTag, "page");
 hexo.extend.injector.register("head_begin", linkTag, "post");
 hexo.extend.injector.register("body_end", scriptTag, "page");
