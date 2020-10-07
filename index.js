@@ -1,4 +1,5 @@
 "use strict";
+const pkg = require("./package.json");
 const url_for = hexo.extend.helper.get("url_for").bind(hexo);
 const path = require("path");
 
@@ -19,14 +20,14 @@ hexo.config.tag_common = Object.assign(
 
 const defaultConfig = hexo.config.tag_common;
 
-let cssHref = "/css/tag-common/index.css";
-let jsSrc = "/js/tag-common/index.js";
+let cssHref = `/css/${pkg.name}.css`;
+let jsSrc = `/js/${pkg.name}.js`;
 if (defaultConfig.cdn) {
-  cssHref = "https://cdn.jsdelivr.net/npm/hexo-tag-common@latest/css/index.css";
-  jsSrc = "https://cdn.jsdelivr.net/npm/hexo-tag-common@latest/js/index.js";
+  cssHref = `https://cdn.jsdelivr.net/npm/${pkg.name}@${pkg.version}/css/index.css`;
+  jsSrc = `https://cdn.jsdelivr.net/npm/${pkg.name}@${pkg.version}/js/index.js`;
 } else {
   const fs = require("hexo-fs");
-  hexo.extend.generator.register("tag-common-css", function (locals) {
+  hexo.extend.generator.register(`${pkg.name}-css`, function (locals) {
     return {
       path: url_for(cssHref),
       data: function () {
@@ -34,7 +35,7 @@ if (defaultConfig.cdn) {
       },
     };
   });
-  hexo.extend.generator.register("tag-common-js", function (locals) {
+  hexo.extend.generator.register(`${pkg.name}-js`, function (locals) {
     return {
       path: url_for(jsSrc),
       data: function () {
