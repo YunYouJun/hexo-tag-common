@@ -9,6 +9,8 @@ Common tags for hexo.
 
 ## Install
 
+> You need to make sure your hexo is `v5.2.0` or above.
+
 ```sh
 npm install hexo-tag-common
 # yarn add hexo-tag-common
