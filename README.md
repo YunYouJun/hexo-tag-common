@@ -23,6 +23,12 @@ Set it in hexo `_config.yml`.
 ```yaml
 tag_common:
   cdn: true # enable jsdelivr CDN, default is true
+  # which layout to use
+  # more info see https://hexo.io/api/injector.html#to-lt-string-gt
+  layout:
+    - post
+    - page
+    # - home
 ```
 
 ## Todo
