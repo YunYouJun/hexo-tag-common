@@ -4,9 +4,12 @@
   "description": "Common tags for hexo.",
   "main": "index.js",
   "scripts": {
+    "build": "sass scss/index.scss css/index.css",
+    "ci:publish": "zx scripts/publish.mjs",
     "dev": "sass --watch scss/index.scss css/index.css --no-source-map",
     "lint": "eslint .",
-    "prepublishOnly": "sass scss/index.scss css/index.css"
+    "prepublishOnly": "npm run build",
+    "release": "zx scripts/release.,js"
   },
   "repository": {
     "type": "git",
@@ -26,6 +29,7 @@
     "eslint": "^8.15.0",
     "eslint-config-prettier": "^8.5.0",
     "hexo": "^6.2.0",
-    "sass": "^1.51.0"
+    "sass": "^1.51.0",
+    "zx": "^6.1.0"
   }
 }
