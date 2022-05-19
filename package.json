@@ -1,6 +1,6 @@
 {
   "name": "hexo-tag-common",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "description": "Common tags for hexo.",
   "main": "index.js",
   "scripts": {
@@ -23,9 +23,9 @@
   },
   "homepage": "https://github.com/YunYouJun/hexo-tag-common#readme",
   "devDependencies": {
-    "eslint": "^8.2.0",
-    "eslint-config-prettier": "^8.3.0",
-    "hexo": "^5.4.0",
-    "sass": "^1.43.4"
+    "eslint": "^8.15.0",
+    "eslint-config-prettier": "^8.5.0",
+    "hexo": "^6.2.0",
+    "sass": "^1.51.0"
   }
 }

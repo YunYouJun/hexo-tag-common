@@ -16,8 +16,8 @@ const config = require("./lib/config")(hexo);
 let cssHref = `/css/${pkg.name}.css`;
 let jsSrc = `/js/${pkg.name}.js`;
 if (config.cdn) {
-  cssHref = `https://cdn.jsdelivr.net/npm/${pkg.name}@${pkg.version}/css/index.css`;
-  jsSrc = `https://cdn.jsdelivr.net/npm/${pkg.name}@${pkg.version}/js/index.js`;
+  cssHref = `${config.cdn}${pkg.name}@${pkg.version}/css/index.css`;
+  jsSrc = `${config.cdn}${pkg.name}@${pkg.version}/js/index.js`;
 } else {
   const fs = require("hexo-fs");
   hexo.extend.generator.register(`${pkg.name}-css`, function (locals) {

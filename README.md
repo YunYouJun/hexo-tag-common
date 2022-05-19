@@ -22,7 +22,7 @@ Set it in hexo `_config.yml`.
 
 ```yaml
 tag_common:
-  cdn: true # enable jsdelivr CDN, default is true
+  cdn: https://fastly.jsdelivr.net/npm/ # enable CDN, default is https://fastly.jsdelivr.net/npm/ 
   # which layout to use
   # more info see https://hexo.io/api/injector.html#to-lt-string-gt
   layout:
