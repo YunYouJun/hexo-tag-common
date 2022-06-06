@@ -38,9 +38,12 @@ tag_common:
 
 ### Tabs
 
-You can use icon like by `@ri:home-4-line`.
+You can use icon like this by `@ri:home-4-line`.
 
 ![Use with icon](https://user-images.githubusercontent.com/25154432/172246743-2c84d6df-927b-4678-89b4-052d2664109f.png)
+
+> You should have imported iconify, more info see [Docs | Iconify](https://docs.iconify.design/).  
+> You can refer [layout/_third-party/iconify.pug | hexo-theme-yun](https://github.com/YunYouJun/hexo-theme-yun/blob/dev/packages/hexo-theme-yun/layout/_third-party/iconify.pug).
 
 ```md
 {% tabs First unique name %}
