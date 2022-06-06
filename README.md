@@ -34,6 +34,37 @@ tag_common:
 ## Feature
 
 - [x] Tabs
+  - iconify
+
+### Tabs
+
+You can use icon like by `@ri:home-4-line`.
+
+![Use with icon](https://user-images.githubusercontent.com/25154432/172246743-2c84d6df-927b-4678-89b4-052d2664109f.png)
+
+```md
+{% tabs First unique name %}
+
+<!-- tab First unique name 1 @ri:home-4-line -->
+
+**This is Tab 1.**
+
+<!-- endtab -->
+
+<!-- tab Icon Test @ri:cloud-line -->
+
+**This is Tab 2.**
+
+<!-- endtab -->
+
+<!-- tab -->
+
+**This is Tab 3.**
+
+<!-- endtab -->
+
+{% endtabs %}
+```
 
 ## Reference
 
