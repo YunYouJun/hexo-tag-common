@@ -44,6 +44,10 @@
         }
 
         transition: all $transition-ease-out;
+
+        .icon {
+          margin-right: 0.5em;
+        }
       }
 
       &.active {

@@ -48,6 +48,10 @@
 .tabs-comment ul.nav-tabs li.tab a i {
   width: 1.2857142857em;
 }
+.tag-common.tabs ul.nav-tabs li.tab a .icon,
+.tabs-comment ul.nav-tabs li.tab a .icon {
+  margin-right: 0.5em;
+}
 .tag-common.tabs ul.nav-tabs li.tab.active,
 .tabs-comment ul.nav-tabs li.tab.active {
   border-bottom-color: transparent;
